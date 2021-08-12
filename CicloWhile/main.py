@@ -1,14 +1,9 @@
-""" condicion = False
-
-while condicion:
-    print('Ejecutando ciclo while')
-else:
-    print('Fin del ciclo while') """
+#Mostrar en pantallas los numeros del 1 al 10 con el ciclo while
 
 contador = 0
 
-while contador < 3:
-    print(f'Tu contador lleva el valor: {contador}')
+while contador <= 10:
+    print(f'Tengo el valor: {contador}')
     contador += 1
 else:
-    print('Fin del ciclo while')
+    print('FIn del ciclo')
