@@ -7,4 +7,11 @@ def mi_funcion(nombre, apellido):
 #los argumentos son los valores que pasamos nosotros
 mi_funcion('Angel', 'Morales')
 
-    
+mi_funcion('Karla', 'Lara')
+#Solicitando valores como argumentos para pasarlo como paramentros en la funcion
+name = input('Ingresa tu nombre: ')
+last_name = input('Ingresa tu apellido: ')
+
+resultado = mi_funcion(name, last_name)
+
+print(resultado)
