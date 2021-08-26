@@ -25,3 +25,10 @@ def lista_nombres(*nombres):
 lista = lista_nombres('Angel', 'Hernan', 'Jose', 'Herni')
 
 print(lista)
+
+#Argumentos llave valor
+def listarTerminos(**kwargs):
+    for llave, valor in kwargs.items():
+        print(f'{llave}: {valor}')
+
+listarTerminos(KEY='llave', POO = 'Progamacion orientada en objetos')
