@@ -1,16 +1,19 @@
 class Persona():
-    def __init__(self, nombre =  'Nombre no definido', apellido = 'Apellido no definido', edad = 0):
+    def __init__(self, nombre =  'Nombre no definido', apellido = 'Apellido no definido', edad = 0, *args, **kwargs):
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
+        self.args = args
+        self.kwargs = kwargs
+        
     
 #Creamos metodos para nuestra clase persona
     def mostrarDetalle(self):
-        print(f'Persona: {self.nombre} {self.apellido} {self.edad}')
+        print(f'Persona: {self.nombre} {self.apellido} {self.edad} {self.args} {self.kwargs}')
         
 
 #Utilizamos el metodo de mostrar detalle para persona1
-persona1 = Persona('Yessica', 'Lopez', 25)
+persona1 = Persona('Yessica', 'Lopez', 25, '123123', 12,23,123,32, comidaFavorita='Pizza', marcaCelular='Samsung')
 print(persona1.mostrarDetalle())
 print('------------------')
 print()
