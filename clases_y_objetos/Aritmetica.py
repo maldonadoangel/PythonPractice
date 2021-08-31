@@ -17,7 +17,8 @@ class Aritmetica():
             print('Error la division no puede ser efectuada, no puedes tener un cero en el denominador, intentalo de nuevo')
         else:
             self.total = self.numero1 / self.numero2
-            print(f'La division de {self.numero1} / {self.numero2} = {self.total}')
+            # la notacion :.3f se utiliza para establecer la cantidad de decimales que tendra nuestra respuesta, en este caso es de 3 decimales
+            print(f'La division de {self.numero1} / {self.numero2} = {self.total:.3f}')
 
 aritmetica = Aritmetica(10, 50)
 aritmetica.suma()
