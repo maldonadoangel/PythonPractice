@@ -34,6 +34,9 @@ class Persona():
     @telefono.setter
     def telefono(self, telefono):
         self._telefono = telefono 
+    
+    def __del__(self):
+        print(f'Persona: {self._nombre}, {self._apellido}')
         
     def mostrarPersona(self):
         print(f'Tu nombre es: {self._nombre} y tu apellido es: {self._apellido}, tienes {self._edad} años y tu numero de celular es el {self._telefono}')
