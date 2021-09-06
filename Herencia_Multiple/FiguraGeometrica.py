@@ -15,4 +15,5 @@ class FiguraGeometrica():
     @alto.setter
     def alto(self, alto):
         self._alto = alto
-    
+    def __str__(self):
+        return f'Figura Geometrica: {self._ancho} {self._alto}'

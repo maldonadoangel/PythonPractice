@@ -9,3 +9,5 @@ class Color():
     def color(self, color):
         self._color = color
     
+    def __str__(self):
+        return f'Color: {self._color}'

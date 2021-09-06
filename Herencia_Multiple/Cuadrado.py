@@ -12,3 +12,6 @@ class Cuadrado(FiguraGeometrica, Color):
     def calcularArea(self):
         return self._alto * self._ancho
     
+    def __str__(self):
+        return f'{FiguraGeometrica.__str__(self)} {Color.__str__(self)}'
+    
