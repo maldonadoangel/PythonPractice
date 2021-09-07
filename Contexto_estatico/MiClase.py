@@ -16,6 +16,10 @@ class MiClase():
     @classmethod
     def metodo_clase(cls):
         print(cls.variable_clase)
+    
+    def metodo_instancia(self):
+        self.metodo_clase()
+        self.metodo_estatico()
 
 #print(MiClase.variable_clase)
 #miClase = MiClase('Variable de instancia')
@@ -23,3 +27,7 @@ class MiClase():
 
 MiClase.metodo_estatico()
 MiClase.metodo_clase()
+miclase1 = MiClase('Variable de instancia')
+miclase1.metodo_clase()
+print('Metodo de instancia: ')
+miclase1.metodo_instancia()
