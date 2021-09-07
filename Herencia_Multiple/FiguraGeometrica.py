@@ -1,4 +1,6 @@
-class FiguraGeometrica():
+#ABC ABSTRACT BASE CLASS
+from abc import ABC, abstractmethod
+class FiguraGeometrica(ABC):
     def __init__(self, ancho, alto):
         self._ancho = ancho
         self._alto = alto
@@ -15,5 +17,11 @@ class FiguraGeometrica():
     @alto.setter
     def alto(self, alto):
         self._alto = alto
+#Clases abstractas, nos obliga a colocar una funcion especifica por la clase padre hacia las clases hijas
+    @abstractmethod
+    def calcularArea(self):
+        pass
+    
     def __str__(self):
         return f'Figura Geometrica: {self._ancho} {self._alto}'
+
