@@ -12,9 +12,14 @@ class MiClase():
     # self.variable_instancia
     #Tenemos que acceder a los objetos atraves de la clases
         print(MiClase.variable_clase)
+        
+    @classmethod
+    def metodo_clase(cls):
+        print(cls.variable_clase)
 
 #print(MiClase.variable_clase)
 #miClase = MiClase('Variable de instancia')
 #print(miClase.variable_instancia)
 
 MiClase.metodo_estatico()
+MiClase.metodo_clase()
